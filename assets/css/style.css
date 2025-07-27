@@ -117,3 +117,44 @@ footer {
   font-size: 0.95rem;
 }
 
+/* Dropdown Menu */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 200px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 1;
+  border-radius: 6px;
+  text-align: left;
+  overflow: hidden;
+}
+
+.dropdown-content a {
+  color: #0b3d91;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background 0.2s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
