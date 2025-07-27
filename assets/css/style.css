@@ -174,11 +174,11 @@ footer {
   min-width: 300px;
 }
 
-.column.left {
+.column.right {
   text-align: left;
 }
 
-.column.right img {
+.column.left img {
   max-width: 100%;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
