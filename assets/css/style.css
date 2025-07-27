@@ -1,7 +1,12 @@
-head {
-  font-family: 'Monsterrat', sans-serif;
+header {
+  font-family: 'Montserrat', sans-serif;
   background-image: url("assets/img/royce.png");
-  margin: 0;
+  background-size: cover; /* or "contain" */
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
 }
 
 body {
