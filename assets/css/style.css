@@ -82,3 +82,38 @@ footer {
   margin-top: 40px;
   font-size: 0.9rem;
 }
+
+.projects {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.project-card {
+  max-width: 400px;
+  margin: 30px auto;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  display: block;
+}
+
+.project-card h3 {
+  margin: 10px 0 0;
+  color: #0b3d91;
+}
+
+.project-card p {
+  padding: 0 20px 20px;
+  font-size: 0.95rem;
+}
+
