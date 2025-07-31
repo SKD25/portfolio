@@ -1,64 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sohan Devalapurkar | Portfolio</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Sohan Devalapurkar - Portfolio</title>
+  <link href="css_files/style.css" rel="stylesheet" type="text/css" />
+  <link href="css_files/navbar.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <header>
+    <nav class="navbar">
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+
+        <li class="dropdown">
+          <a href="#">Projects</a>
+          <ul class="dropdown-menu">
+            <li><a href="dbf.html">Design Build Fly at UCLA</a></li>
+            <li><a href="windflux.html">WindFluX Lab at UT Dallas</a></li>
+            <li><a href="i2bl.html">I²BL Lab at UCLA</a></li>
+            <li><a href="glider_sizing.html">Glider Sizing and Stability Analysis</a></li>
+            <li><a href="wheel_fairing.html">Wheel Fairing for Landing Gear</a></li>
+            <li><a href="emotion_detector.html">Voice-Based Emotion Detector</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
     <div class="container">
-      <h1>Sohan Devalapurkar</h1>
-      <nav>
-        <a href="index.html">Home</a>
-        <div class="dropdown">
-          <a href="#" class="dropbtn">Projects ▾</a>
-          <div class="dropdown-content">
-            <a href="dbf.html">Design Build Fly</a>
-            <a href = "#">WindFluX Lab at UT Dallas</a>
-            <a href = "#">I²BL at UCLA</a>
-            <a href = "#">Glider Sizing and Stability Analysis</a>
-            <a href = "#">Wheel Fairing for Landing Gear</a>
-            <a href = "#">Voice-Based Emotion Detector</a>
-          </div>
-        </div>
-      </nav>
+      <div class="header-text">
+        <h1>Sohan <br> Devalapurkar <br> Portfolio
+        </h1>
+      </div>
     </div>
   </header>
 
-  <section class="hero">
-  <section class="two-column">
-    <div class="column left">
-      <img src="assets/img/BN8A9741.JPG" alt="DBF plane" class = "about-me-img">
-    </div>
-    <div class="column right">
+  <section class="about-me">
+    <div class="right-column">
       <h2>About Me!</h2>
-      <p>Hi, I'm Sohan, an aerospace engineering student at UCLA with a deep curiosity about flight and how we can push its boundaries. I'm especially drawn to aerodynamics and computational fluid dynamics (CFD), where physics, design, and problem-solving come together to shape the future of aviation.</p>
-      <p>I'm currently the Vice Project Manager of UCLA’s Design Build Fly team, where I help lead the design, testing, and manufacturing of competition aircraft. I work across sub-teams to make sure our designs are optimized, our timelines stay on track, and our plane is ready to perform. Whether it's coordinating drag-reduction trade studies or supporting a wind tunnel test, I love being hands-on with every part of the process.</p>
-      <p>In research, I previously worked at the I²BL lab at UCLA, focusing on microfluidic devices and surface coatings. That experience taught me how to approach experimental work and analyze results in a structured, detail-oriented way. This summer, I’ll be continuing to grow as a researcher as an incoming Visiting Scholar at the WindFLuX Lab at UT Dallas, where I’ll be further working on wind tunnel testing and data analysis for boundary layers across waves!</p>
+      <p>Hi, I'm Sohan, an aerospace engineering student at UCLA with a deep curiosity about flight and how we can push
+        its boundaries. I'm especially drawn to aerodynamics and computational fluid dynamics (CFD), where physics,
+        design, and problem-solving come together to shape the future of aviation.</p>
+      <p>I'm currently the Vice Project Manager of UCLA’s Design Build Fly team, where I help lead the design, testing,
+        and manufacturing of competition aircraft. I work across sub-teams to make sure our designs are optimized, our
+        timelines stay on track, and our plane is ready to perform. Whether it's coordinating drag-reduction trade
+        studies or supporting a wind tunnel test, I love being hands-on with every part of the process.</p>
+      <p>In research, I previously worked at the I²BL lab at UCLA, focusing on microfluidic devices and surface
+        coatings. That experience taught me how to approach experimental work and analyze results in a structured,
+        detail-oriented way. This summer, I’ll be continuing to grow as a researcher as an incoming Visiting Scholar at
+        the WindFLuX Lab at UT Dallas, where I’ll be further working on wind tunnel testing and data analysis for
+        boundary layers across waves!</p>
     </div>
-  </section>
+    <div class="left-column">
+      <img src="BN8A9741.JPG" alt="Sohan Devalapurkar">
+    </div>
   </section>
 
   <section class="projects">
-  <div class="container">
-    <h2>Projects</h2>
-    <div class="project-card">
-      <a href="dbf.html">
-        <img src="assets/img/BN8A3688-3.jpg" alt="DBF plane">
-        <h3>Design Build Fly</h3>
-        <p>Custom aircraft project for the AIAA DBF competition.</p>
+    <div class="project-row">
+      <a href="dbf.html" class="project-img left-slide">
+        <img src="dbf/dbf_cover.jpg" alt="Design Build Fly">
+        <div class="overlay">
+          <span>Design Build Fly at UCLA</span>
+        </div>
+      </a>
+
+      <a href="windflux.html" class="project-img right-slide">
+        <img src="windflux_pics/Measured_vs_fitted.png" alt="Wind Flux Lab">
+        <div class="overlay">
+          <span>WindFLuX Lab at UT Dallas</span>
+        </div>
       </a>
     </div>
-  </div>
-</section>
 
-  <footer>
-    <div class="container">
-      <p>© 2025 Sohan Devalapurkar</p>
+    <div class="project-row">
+      <a href="i2bl.html" class="project-img left-slide">
+        <img src="i2bl/droplet_generation.gif" alt="I2BL Lab">
+        <div class="overlay">
+          <span>I²BL Lab at UCLA</span>
+        </div>
+      </a>
+
+      <a href="glider_sizing.html" class="project-img right-slide">
+        <img src="glider_sizing/glider_xflr.png" alt="Glider Sizing">
+        <div class="overlay">
+          <span>Glider Sizing and Stability Analysis</span>
+        </div>
+      </a>
     </div>
+
+    <div class="project-row">
+      <a href="wheel_fairing.html" class="project-img left-slide">
+        <img src="wheel_fairing/wheel_fairings.png" alt="Wheel Fairings">
+        <div class="overlay">
+          <span>Wheel Fairing for Landing Gear</span>
+        </div>
+      </a>
+
+      <a href="emotion_detector.html" class="project-img right-slide">
+        <img src="emotion_detector/arduino_setup_2.png" alt="Voice-Based Emotion Detector">
+        <div class="overlay">
+          <span>Voice-Based Emotion Detector</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>Connect with me on
+      <a href="https://www.linkedin.com/in/sohan-devalapurkar/" target="_blank" rel="noopener noreferrer">
+        LinkedIn
+      </a>!
+    </p>
   </footer>
+
+  <script src="scripts/script.js"></script>
 </body>
+
 </html>
