@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>WindFluX Lab at UT Dallas</title>
+	<link href="css_files/windflux.css" rel="stylesheet" type="text/css" />
+	<link href="css_files/navbar.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+
+		<nav class="navbar">
+			<ul class="nav-menu">
+				<li><a href="index.html">Home</a></li>
+
+				<li class="dropdown">
+					<a href="#">Projects</a>
+					<ul class="dropdown-menu">
+						<li><a href="dbf.html">Design Build Fly at UCLA</a></li>
+						<li><a href="windflux.html">WindFluX Lab at UT Dallas</a></li>
+						<li><a href="i2bl.html">I²BL Lab at UCLA</a></li>
+						<li><a href="glider_sizing.html">Glider Sizing and Stability Analysis</a></li>
+						<li><a href="wheel_fairing.html">Wheel Fairing for Landing Gear</a></li>
+						<li><a href="emotion_detector.html">Voice-Based Emotion Detector</a></li>
+					</ul>
+				</li>
+
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="container">
+			<div class="header-text">
+				<h1>WindFluX Lab at UT Dallas</h1>
+			</div>
+		</div>
+	</header>
+
+	<section class="about-dbf">
+		<div class="left-column">
+			<h2>Wind Flux Lab,<br />University of Texas, Dallas</h2>
+		</div>
+		<div class="right-column">
+			<p><strong>What: </strong>Contributing to ongoing research on offshore wind turbines and boundary layer behavior
+				over waveforms.<br />
+
+				<br /><strong>Why:
+				</strong>To gain hands-on experience with iterative mechanical design and fabrication, deepen my understanding
+				of fluid dynamics and boundary layers, and strengthen technical skills while collaborating in a small research
+				team environment.
+
+				<br /><br /><strong>How: </strong>My primary project involves developing and testing a scalable Arduino-based
+				control system for a 30-stepper motor array that generates waveforms for wind tunnel experiments. This required
+				learning Object-Oriented Programming (OOP) in C++ to build a flexible control structure.
+
+				<br /> <br />To complement this, I created a custom MATLAB UI that enables real-time user control over wave
+				parameters
+				and
+				individual motor positions. This involved integrating serial communication between MATLAB and the Arduino
+				environment.
+
+				<br /> <br />In parallel, I assist with resolving mechanical issues in the stepper motor setup through iterative
+				design. I
+				use SolidWorks to model components and a Prusa 3D printer to fabricate replacement parts and improvements.
+
+				<br /><br /><strong>Results
+					(so far): </strong> I've strengthened my skills in C++, MATLAB, and Arduino development, while gaining deeper
+				insight into the mechanical design process. Collaborating with other researchers in wind tunnel testing has also
+				enhanced my practical understanding of fluid dynamics. I'm excited to continue learning and contributing to the
+				project as it progresses.
+			</p>
+		</div>
+	</section>
+
+	<section class="image-gallery">
+		<figure class="full-width">
+			<video class="slide-left" autoplay muted loop playsinline>
+				<source src="../windflux_pics/windflux_mocean_automatic_setup.mp4" type="video/mp4" />
+				Your browser does not support the video tag.
+			</video>
+			<figcaption>Video of Automatic Wave Set Up</figcaption>
+		</figure>
+
+		<div class="side-by-side-images">
+			<figure>
+				<img src="../windflux_pics/motor_arm_angles.png"
+					alt="Required Motor Arm Rotation Angle for 145 cm Wavelength Wave" class="slide-left" />
+				<figcaption>Required Motor Arm Rotation Angle for 145 cm Wavelength Wave</figcaption>
+			</figure>
+
+			<figure>
+				<img src="../windflux_pics/matlab_ui.png" alt="UI as developed in Matlab" class="slide-right" />
+				<figcaption>UI as developed in Matlab</figcaption>
+		</div>
+	</section>
+
+	<footer class="site-footer">
+		<p>Connect with me on
+			<a href="https://www.linkedin.com/in/sohan-devalapurkar/" target="_blank" rel="noopener noreferrer">
+				LinkedIn
+			</a>!
+		</p>
+	</footer>
+
+	<script src="scripts/windflux.js"></script>
+</body>
+
+</html>
