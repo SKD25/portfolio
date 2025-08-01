@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>I2BL Lab at UCLA</title>
+	<link href="css_files/i2bl.css" rel="stylesheet" type="text/css" />
+	<link href="css_files/navbar.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+
+		<nav class="navbar">
+			<ul class="nav-menu">
+				<li><a href="index.html">Home</a></li>
+
+				<li class="dropdown">
+					<a href="#">Projects</a>
+					<ul class="dropdown-menu">
+						<li><a href="dbf.html">Design Build Fly at UCLA</a></li>
+						<li><a href="windflux.html">WindFluX Lab at UT Dallas</a></li>
+						<li><a href="i2bl.html">I²BL Lab at UCLA</a></li>
+						<li><a href="glider_sizing.html">Glider Sizing and Stability Analysis</a></li>
+						<li><a href="wheel_fairing.html">Wheel Fairing for Landing Gear</a></li>
+						<li><a href="emotion_detector.html">Voice-Based Emotion Detector</a></li>
+					</ul>
+				</li>
+
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="container">
+			<div class="header-text">
+				<h1>I2BL Lab at UCLA</h1>
+			</div>
+		</div>
+	</header>
+
+	<section class="about-dbf">
+		<div class="left-column">
+			<h2>I2BL Lab,<br />University of California, Los Angeles</h2>
+		</div>
+		<div class="right-column">
+			<p><strong>What: </strong>Simulated two-phase droplet generation and ferrofluid magnetic field behavior in
+				microfluidic systems using COMSOL and MATLAB.<br />
+
+				<br /><strong>Why: </strong>
+				To gain experience in microfluidic CFD simulations, understand mesh-dependency analyses, and learn how to
+				develop physics-based models to validate experimental data. <br />
+
+				<br /><strong>How:
+				</strong> In COMSOL, I set up a two-phase level set simulation to model droplet formation in a cross-flow
+				droplet generator using silicone oil and a 10% glycerol–water mixture. I performed a mesh-dependency study by
+				varying mesh fineness across multiple iterations. For each case, I calculated droplet volume using a surface
+				integration at the outlet and compared results to experimental data to balance accuracy and computational
+				efficiency. <br />
+
+				<br />Separately, I used MATLAB to fit a physics-based model to magnetic field data across a ferrofluid in a
+				microfluidic chip, influenced by a permanent magnet. This model helped predict ferrofluid motion based on its
+				position relative to the magnet.
+
+				<br /><br /><strong>Results: </strong> In the end, I identified that the "finer" mesh option yielded optimal
+				accuracy with only
+				2.65% error in droplet volume. The magnetic field model successfully predicted ferrofluid behavior, enabling a
+				better understanding of magnetically driven flows in microfluidic chips.
+			</p>
+		</div>
+	</section>
+
+	<section class="image-gallery">
+		<figure class="full-width narrow-figure">
+			<img src="../i2bl/mesh_dependency_analysis.jpg" alt="Results of Mesh Dependency Analysis on COMSOL"
+				class="slide-right" />
+			<figcaption>Results of Mesh Dependency Analysis on COMSOL</figcaption>
+		</figure>
+
+		<div class="side-by-side-images">
+			<figure>
+				<img src="../i2bl/Bx_datafitting.jpg" alt="Data fitting to Magnetic Field Strength in x-direction"
+					class="slide-left" />
+				<figcaption>Data fitting to Magnetic Field Strength in x-direction</figcaption>
+			</figure>
+
+			<figure>
+				<img src="../i2bl/By_datafitting.jpg" alt="Data fitting to Magnetic Field Strength in x-direction"
+					class="slide-left" />
+				<figcaption>Data fitting to Magnetic Field Strength in x-direction</figcaption>
+			</figure>
+		</div>
+	</section>
+
+	<footer class="site-footer">
+		<p>Connect with me on
+			<a href="https://www.linkedin.com/in/sohan-devalapurkar/" target="_blank" rel="noopener noreferrer">
+				LinkedIn
+			</a>!
+		</p>
+	</footer>
+
+	<script src="scripts/windflux.js"></script>
+</body>
+
+</html>
