@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Voice-Based Emotion Detector</title>
+	<link href="css_files/emotion_detector.css" rel="stylesheet" type="text/css" />
+	<link href="css_files/navbar.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+
+		<nav class="navbar">
+			<ul class="nav-menu">
+				<li><a href="index.html">Home</a></li>
+
+				<li class="dropdown">
+					<a href="#">Projects</a>
+					<ul class="dropdown-menu">
+						<li><a href="dbf.html">Design Build Fly at UCLA</a></li>
+						<li><a href="windflux.html">WindFluX Lab at UT Dallas</a></li>
+						<li><a href="i2bl.html">I²BL Lab at UCLA</a></li>
+						<li><a href="glider_sizing.html">Glider Sizing and Stability Analysis</a></li>
+						<li><a href="wheel_fairing.html">Wheel Fairing for Landing Gear</a></li>
+						<li><a href="emotion_detector.html">Voice-Based Emotion Detector</a></li>
+					</ul>
+				</li>
+
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="container">
+			<div class="header-text">
+				<h1>Voice-Based Emotion Detector</h1>
+			</div>
+		</div>
+	</header>
+
+	<section class="about-dbf">
+		<div class="left-column">
+			<h2>Voice-Based<br />Emotion Detector</h2>
+		</div>
+		<div class="right-column">
+			<p><strong>What: </strong>Developed a real-time, voice-based emotion detector capable of distinguishing between
+				anger and sadness.<br />
+
+				<br /><strong>Why:
+				</strong> To explore how audio signal parameters can be used to classify emotional states and to gain experience
+				with signal processing and Python-Arduino communication.
+
+				<br /><br /><strong>How: </strong>My team and I selected four acoustic parameters to differentiate emotions:
+				zero-crossing rate, short-term energy, harmonic-to-noise ratio, and mean pitch. We built the prototype on a
+				breadboard, using a microphone and two LEDs -- one each for anger and sadness detection. </br></br>
+				Using Arduino IDE, I programmed the Arduino to collect microphone data over 3-second intervals. These ADC values
+				were sent over serial to Python, which converted the signal into a .wav file and extracted the chosen
+				parameters. The values were compared to threshold ranges derived from testing labeled angry and sad voice
+				samples. If at least 3 of the 4 thresholds were met for anger, Python sent a signal back to Arduino to light the
+				corresponding LED.
+				<br /><br /><strong>Results
+				</strong>The system achieved 80% classification accuracy over 10 test trials (5 angry and 5 sad samples), which
+				we deemed as successful!
+			</p>
+		</div>
+	</section>
+
+	<section class="image-gallery">
+		<figure class="full-width">
+			<img src="../emotion_detector/lit_up_arduino.png" alt="Red LED lit up after microphone detected angry test audio"
+				class="slide-left" />
+			<figcaption>Red LED lit up after microphone detected angry test audio</figcaption>
+		</figure>
+
+		<div class="side-by-side-images">
+			<figure>
+				<img src="../emotion_detector/arduino_setup_2.png" alt="Setup of Arduino connected to microphone using LEDs"
+					class="slide-right" />
+				<figcaption>Setup of Arduino connected to microphone using LEDs</figcaption>
+			</figure>
+
+			<figure>
+				<img src="../emotion_detector/media.png"
+					alt="Short-term energy values across 10 trials for angry and sad audios" class="slide-left" />
+				<figcaption>Short-term energy values across 10 trials for angry and sad audios</figcaption>
+			</figure>
+		</div>
+	</section>
+
+	<footer class="site-footer">
+		<p>Connect with me on
+			<a href="https://www.linkedin.com/in/sohan-devalapurkar/" target="_blank" rel="noopener noreferrer">
+				LinkedIn
+			</a>!
+		</p>
+	</footer>
+
+	<script src="scripts/emotion_detector.js"></script>
+</body>
+
+</html>
