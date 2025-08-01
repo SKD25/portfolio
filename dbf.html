@@ -1,43 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Design Build Fly | Sohan Devalapurkar</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Design Build Fly at UCLA</title>
+	<link href="assets/css/dbf.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/navbar.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <header>
-    <div class="container">
-      <h1>Design Build Fly</h1>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="dbf.html" class="active">DBF</a>
-      </nav>
-    </div>
-  </header>
+	<header>
 
-  <section class="project">
-    <div class="container">
-      <h2>UCLA DBF Team – Aerodynamics & Manufacturing</h2>
-      <p>I contributed to the UCLA Design Build Fly team by helping design and manufacture a custom RC aircraft for this year’s AIAA competition. My work focused on CAD, airfoil selection, aerodynamic analysis, and 3D printing.</p>
+		<nav class="navbar">
+			<ul class="nav-menu">
+				<li><a href="index.html">Home</a></li>
 
-      <img src="assets/img/BN8A3688-3.jpg" alt="DBF plane" class="project-image" />
+				<li class="dropdown">
+					<a href="#">Projects</a>
+					<ul class="dropdown-menu">
+						<li><a href="dbf.html">Design Build Fly at UCLA</a></li>
+						<li><a href="windflux.html">WindFluX Lab at UT Dallas</a></li>
+						<li><a href="i2bl.html">I²BL Lab at UCLA</a></li>
+						<li><a href="glider_sizing.html">Glider Sizing and Stability Analysis</a></li>
+						<li><a href="wheel_fairing.html">Wheel Fairing for Landing Gear</a></li>
+						<li><a href="emotion_detector.html">Voice-Based Emotion Detector</a></li>
+					</ul>
+				</li>
 
-      <ul class="tools-used">
-        <li>SolidWorks</li>
-        <li>XFLR5</li>
-        <li>3D Printing</li>
-        <li>Wind Tunnel Testing</li>
-      </ul>
-    </div>
-  </section>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="container">
+			<div class="header-text">
+				<h1>Design Build Fly at UCLA</h1>
+			</div>
+		</div>
+	</header>
 
-  <footer>
-    <div class="container">
-      <p>© 2025 Sohan Devalapurkar</p>
-    </div>
-  </footer>
+	<section class="about-dbf">
+		<div class="left-column">
+			<h2>Design Build Fly, <br />University of California, Los Angeles</h2>
+		</div>
+		<div class="right-column">
+			<p><strong>What: </strong>Contributing to the Design Build Fly (DBF) competition team at UCLA, focused on
+				designing,
+				testing, and building a remote-controlled aircraft for AIAA’s annual collegiate competition.<br />
+
+				<br /><strong>Why:
+				</strong>To gain hands-on experience in iterative aircraft design and fabrication, collaborate across
+				engineering
+				disciplines (aerodynamics, structures, controls, propulsion), and strengthen both technical and communication
+				skills in a fast-paced, team-oriented environment.
+
+				<br /><br /><strong>How: </strong>In the 2024–25 season, I was a member of the Aerodynamics and Manufacturing
+				subteams.
+			<ul>
+				<li>In Aerodynamics, I contributed to CFD simulations, stability analyses, and post-flight data processing using
+					tools
+					such as SimScale, XFLR5, MATLAB, and some ANSYS Fluent and C++.</li>
+				<li>On the Manufacturing side, I helped construct key components of the competition aircraft, including
+					performing carbon
+					fiber layups for the fuselage, laser cutting wooden ribs, and applying Monokote to the wing and tail.</li>
+			</ul>
+			<br />For the 2025–26 season, I now serve as Vice Project Manager (VPM). In this role, I support the Project
+			Manager
+			with administrative responsibilities such as budgeting, recruitment, and competition logistics, while also
+			coordinating
+			closely with the Chief Engineer. This position serves as training for the Project Manager role in the 2026–27
+			season.
+			I also plan to join the CAD and Propulsion subteams to further broaden my engineering
+			skillset.
+			<br /><br /><strong>Results
+				(so far): </strong>Our team achieved a historic performance--2nd place in the Design Report and 10th overall at
+			the
+			AIAA DBF competition, the best results in team history. We’re excited to build on that momentum in the upcoming
+			season!</p>
+		</div>
+	</section>
+
+	<section class="image-gallery">
+		<figure class="full-width">
+			<img src="../dbf_img/BN8A5693.JPG" alt="Me with Bell-Air, our 24-25 competition aircraft!" class="slide-left" />
+			<figcaption>Me with Bell-Air, our 24–25 competition aircraft</figcaption>
+		</figure>
+
+		<div class="side-by-side-images">
+			<figure>
+				<img src="../dbf_img/BN8A3688-3.jpg" alt="Close up of Bell-Air!" class="slide-right" />
+				<figcaption>Close-up of Bell-Air</figcaption>
+			</figure>
+
+			<figure>
+				<img src="../dbf_img/BN8A4893.jpg" alt="Bell-Air in flight!" class="slide-left" />
+				<figcaption>Bell-Air in flight</figcaption>
+			</figure>
+		</div>
+	</section>
+
+	<footer class="site-footer">
+		<p>Connect with me on
+			<a href="https://www.linkedin.com/in/sohan-devalapurkar/" target="_blank" rel="noopener noreferrer">
+				LinkedIn
+			</a>!
+		</p>
+	</footer>
+
+	<script src="scripts/dbf.js"></script>
 </body>
+
 </html>
