@@ -20,7 +20,7 @@ html {
 	left: 0;
 	width: 100%;
 	height: 70vh;
-	background: url("../glider_sizing/glider_xflr.png") center/cover no-repeat;
+	background: url("assets/glider_sizing/glider_xflr.png") center/cover no-repeat;
 	opacity: 0;
 	z-index: 1;
 	transition: opacity 1.5s ease-in-out;
