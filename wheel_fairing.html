@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Wheel Fairings for Landing Gear</title>
+	<link href="css_files/wheel_fairing.css" rel="stylesheet" type="text/css" />
+	<link href="css_files/navbar.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+
+		<nav class="navbar">
+			<ul class="nav-menu">
+				<li><a href="index.html">Home</a></li>
+
+				<li class="dropdown">
+					<a href="#">Projects</a>
+					<ul class="dropdown-menu">
+						<li><a href="dbf.html">Design Build Fly at UCLA</a></li>
+						<li><a href="windflux.html">WindFluX Lab at UT Dallas</a></li>
+						<li><a href="i2bl.html">I²BL Lab at UCLA</a></li>
+						<li><a href="glider_sizing.html">Glider Sizing and Stability Analysis</a></li>
+						<li><a href="wheel_fairing.html">Wheel Fairing for Landing Gear</a></li>
+						<li><a href="emotion_detector.html">Voice-Based Emotion Detector</a></li>
+					</ul>
+				</li>
+
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="container">
+			<div class="header-text">
+				<h1>Wheel Fairings for Landing Gear</h1>
+			</div>
+		</div>
+	</header>
+
+	<section class="about-dbf">
+		<div class="left-column">
+			<h2>Wheel Fairings for<br />Landing Gear</h2>
+		</div>
+		<div class="right-column">
+			<p><strong>What: </strong>Simulated and experimentally validated the aerodynamic performance of wheel fairings for
+				a competition aircraft.<br />
+
+				<br /><strong>Why:
+				</strong> To reduce drag from landing gear and gain hands-on experience using CFD tools and wind tunnel testing
+				to support design decisions.
+
+				<br /><br /><strong>How: </strong>I performed an angle-of-attack (AOA) sweep in SimScale at 100 ft/s—our
+				aircraft’s cruise speed—on a landing gear configuration with and without wheel fairings. Simulations predicted a
+				~6% drag reduction due to the fairings. </br></br>
+				To validate these results, the UCLA DBF Aerodynamics team and I manufactured prototype fairings and tested them
+				in a low-speed wind tunnel. Experimental results showed a 6.42% reduction in drag, closely matching simulations.
+				Although lift slightly increased, it was effectively offset by the added weight of the fairings.
+				<br /><br /><strong>Results
+				</strong>The validated design was incorporated into UCLA’s final Design Build Fly competition aircraft!
+			</p>
+		</div>
+	</section>
+
+	<section class="image-gallery">
+		<figure class="full-width">
+			<img src="../wheel_fairing/wheel_fairings_cfd.png" alt="Streamlines across wheel fairing" class="slide-left" />
+			<figcaption>Streamlines across wheel fairing</figcaption>
+		</figure>
+
+		<div class="side-by-side-images">
+			<figure>
+				<img src="../wheel_fairing/wheel_cfd.png" alt="Streamlines across wheel without fairings" class="slide-right" />
+				<figcaption>Streamlines across wheel without fairings</figcaption>
+			</figure>
+
+			<figure>
+				<img src="../wheel_fairing/wind_tunnel.png" alt="Wind tunnel testing" class="slide-left" />
+				<figcaption>Wind tunnel testing</figcaption>
+			</figure>
+		</div>
+	</section>
+
+	<footer class="site-footer">
+		<p>Connect with me on
+			<a href="https://www.linkedin.com/in/sohan-devalapurkar/" target="_blank" rel="noopener noreferrer">
+				LinkedIn
+			</a>!
+		</p>
+	</footer>
+
+	<script src="scripts/wheel_fairing.js"></script>
+</body>
+
+</html>
